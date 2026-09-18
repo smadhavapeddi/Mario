@@ -20,8 +20,7 @@ import logging
 from flask import Flask, jsonify, request, send_from_directory
 from openai import OpenAI
 
-#MODEL_ACCESS_KEY = os.environ.get("MODEL_ACCESS_KEY")
-MODEL_ACCESS_KEY =doo_v1_d9e11f9b068502c9a483e47b567774407aa8164393c04e97b5d1b12ad7e2e512
+MODEL_ACCESS_KEY = os.environ.get("MODEL_ACCESS_KEY")
 MODEL_ID = os.environ.get("MODEL_ID", "llama3.3-70b-instruct")
 PORT = int(os.environ.get("PORT", 8080))
 
